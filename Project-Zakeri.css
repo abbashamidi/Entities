@@ -14,61 +14,99 @@
 body {
   font-family: "Vazirmatn", sans-serif !important;
   background-color: bisque !important;
+  font-size: 13px;
 }
 
 .profileBackground {
-    width: 98vw;
-    margin: 0 auto;
-    height: 20vh;
-    background-image: url(./4e9abc9c38f6f3b725f3803fddbfc79b.jpg!sw800);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0 0 250px 250px;
+  width: 98vw;
+  margin: 0 auto;
+  height: 20vh;
+  background-image: url(./4e9abc9c38f6f3b725f3803fddbfc79b.jpg!sw800);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 250px 250px;
 }
 
 .profile {
-    text-align: center;
+  text-align: center;
 }
 
 .profile-background {
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-top: -45px;
-    margin-bottom: 12px;
-    background-image: url(./original-390889c663518e305b4544e04c1aed1a.png);
-    background-position: center;
-    background-size: cover;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -45px;
+  margin-bottom: 12px;
+  background-image: url(./original-390889c663518e305b4544e04c1aed1a.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .container div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 12px auto;
-    padding: 8px;
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px auto;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .line-container {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: bisque;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: bisque;
 }
 
 .line-first {
-    background-image: linear-gradient(to left, white , black);
+  background-image: linear-gradient(to left, white, black);
 }
 .line-last {
-    background-image: linear-gradient(to right, white , black);
+  background-image: linear-gradient(to right, white, black);
 }
 
 .line {
-    height: 1px;
-    width: 40%;
- 
+  height: 1px;
+  width: 40%;
 }
 
+.accordion-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.accordion-text {
+  background-color: #fff;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: -15px;
+  opacity: 0; /* Hidden by default */
+  visibility: hidden; /* Hidden by default */
+  display: none; /* Display none initially */
+  transition: opacity 0.3s ease; /* Delay for fading effect */
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease; /* Add the same duration for fade-in */
+}
+
+.rotate {
+  transform: rotate(180deg); /* Rotate the arrow icon */
+  transition: transform 0.3s ease;
+}
+
+.accordion-container {
+    margin-top: 12px;
+}
